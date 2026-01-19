@@ -1,0 +1,264 @@
+{
+    "cards": [
+          {
+                  "id": "f001",
+                  "category": "foundations",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "Model Context Protocol"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Open-source standard for connecting AI applications to external systems"
+                  }
+          },
+          {
+                  "id": "f002",
+                  "category": "foundations",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "MCP USB-C Analogy"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Standardized interface for AI applications, like USB-C provides for devices"
+                  }
+          },
+          {
+                  "id": "f003",
+                  "category": "foundations",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "question",
+                            "text": "What can MCP connect AI apps to?"
+                  },
+                  "back": {
+                            "type": "answer",
+                            "text": "Data sources, tools, workflows, APIs, databases, and external systems"
+                  }
+          },
+          {
+                  "id": "a001",
+                  "category": "architecture",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "MCP Host"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "AI application that coordinates and manages multiple MCP clients"
+                  }
+          },
+          {
+                  "id": "a002",
+                  "category": "architecture",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "MCP Client"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Component that maintains a connection to an MCP server and obtains context"
+                  }
+          },
+          {
+                  "id": "a003",
+                  "category": "architecture",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "MCP Server"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Program that provides context to MCP clients through standardized interfaces"
+                  }
+          },
+          {
+                  "id": "a004",
+                  "category": "architecture",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "concept",
+                            "text": "Stdio Transport"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Uses standard input/output for direct process communication between local processes"
+                  }
+          },
+          {
+                  "id": "a005",
+                  "category": "architecture",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "concept",
+                            "text": "Streamable HTTP Transport"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Uses HTTP POST and Server-Sent Events for remote server communication"
+                  }
+          },
+          {
+                  "id": "p001",
+                  "category": "primitives",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "Tools (MCP Primitive)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Executable functions that AI applications can invoke to perform actions"
+                  }
+          },
+          {
+                  "id": "p002",
+                  "category": "primitives",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "Resources (MCP Primitive)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Passive data sources providing read-only context information to AI applications"
+                  }
+          },
+          {
+                  "id": "p003",
+                  "category": "primitives",
+                  "difficulty": "beginner",
+                  "front": {
+                            "type": "concept",
+                            "text": "Prompts (MCP Primitive)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Reusable instruction templates that help structure interactions with language models"
+                  }
+          },
+          {
+                  "id": "p004",
+                  "category": "primitives",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "question",
+                            "text": "What does tools/list method do?"
+                  },
+                  "back": {
+                            "type": "answer",
+                            "text": "Discover available tools on a server and retrieve their schemas and descriptions"
+                  }
+          },
+          {
+                  "id": "p005",
+                  "category": "primitives",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "question",
+                            "text": "What does tools/call method do?"
+                  },
+                  "back": {
+                            "type": "answer",
+                            "text": "Execute a specific tool with provided arguments and return the result"
+                  }
+          },
+          {
+                  "id": "c001",
+                  "category": "clients",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "concept",
+                            "text": "Elicitation (Client Feature)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Allows servers to request specific information from users during interactions"
+                  }
+          },
+          {
+                  "id": "c002",
+                  "category": "clients",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "concept",
+                            "text": "Roots (Client Feature)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Filesystem boundaries that define which directories servers should access"
+                  }
+          },
+          {
+                  "id": "c003",
+                  "category": "clients",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "concept",
+                            "text": "Sampling (Client Feature)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Allows servers to request LLM completions through the client's AI application"
+                  }
+          },
+          {
+                  "id": "d001",
+                  "category": "development",
+                  "difficulty": "intermediate",
+                  "front": {
+                            "type": "question",
+                            "text": "What protocol does MCP use for messaging?"
+                  },
+                  "back": {
+                            "type": "answer",
+                            "text": "JSON-RPC 2.0 based protocol for client-server communication"
+                  }
+          },
+          {
+                  "id": "d002",
+                  "category": "development",
+                  "difficulty": "advanced",
+                  "front": {
+                            "type": "concept",
+                            "text": "Lifecycle Management"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Handles connection initialization, capability negotiation, and termination between clients/servers"
+                  }
+          },
+          {
+                  "id": "d003",
+                  "category": "development",
+                  "difficulty": "advanced",
+                  "front": {
+                            "type": "question",
+                            "text": "What happens during MCP initialization?"
+                  },
+                  "back": {
+                            "type": "answer",
+                            "text": "Capability negotiation handshake to declare supported features and protocol version"
+                  }
+          },
+          {
+                  "id": "d004",
+                  "category": "development",
+                  "difficulty": "advanced",
+                  "front": {
+                            "type": "concept",
+                            "text": "Notifications (MCP Feature)"
+                  },
+                  "back": {
+                            "type": "definition",
+                            "text": "Real-time JSON-RPC messages without expecting response, enabling dynamic updates"
+                  }
+          }
+    ]
+}
